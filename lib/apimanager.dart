@@ -11,7 +11,7 @@ class ApiManager {
     var musicModel1 = null;
     try {
       Uri uri1 = Uri.parse(
-          "https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=0591883d7aa58553389b4372ce82184b");
+          "https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=123abclikethis");
       var response = await client.get(uri1);
 
       if (response.statusCode == 200) {
@@ -37,7 +37,7 @@ class ApiManager2 {
     try {
       int track_id = trackId;
       Uri uri2 = Uri.parse(
-          "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=$track_id&apikey=0591883d7aa58553389b4372ce82184b");
+          "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=$track_id&apikey=123abclikethis");
       var response = await client.get(uri2);
 
       if (response.statusCode == 200) {
